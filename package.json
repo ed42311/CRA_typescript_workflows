@@ -16,9 +16,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
-    "format": "prettier --write src/**/*.{ts,tsx}"
+    "format": "prettier --write src/**/*.{ts,tsx}",
+    "validate": "npm-run-all --parallel format lint build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +45,7 @@
     "eslint-plugin-jest": "^23.8.2",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "typescript": "^3.7.5"
   }
