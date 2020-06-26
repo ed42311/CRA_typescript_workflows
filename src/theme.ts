@@ -21,19 +21,5 @@ const theme = createMuiTheme({
       default: '#282c34',
     },
   },
-  overrides: {
-    MuiPaper: {
-      root: {
-        padding: '20px 10px',
-        margin: '10px',
-        backgroundColor: '#fff', // 5d737e
-      },
-    },
-    MuiButton: {
-      root: {
-        margin: '5px',
-      },
-    },
-  },
 });
 export default theme;
